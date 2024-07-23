@@ -1,4 +1,4 @@
-@echo off
+:: @echo off
 :: Suppress the display of commands as they are executed
 
 :: Install global npm packages
@@ -44,3 +44,18 @@ jspm install aurelia-framework
 :: This command installs the packages specified in the jspm.config.js file or other JSPM configuration files.
 :: It fetches and installs the necessary dependencies for your project as defined in JSPM's configuration.
 jspm install
+
+:: The "aurelia-bootstrapper" package is essential for initializing and starting an Aurelia application.
+:: JSPM handles the installation and configuration of this package, making it available for use in the browser environment.
+:: The bootstrapper sets up the root component, configures dependencies, and manages the application's lifecycle.
+:: This command adds "aurelia-bootstrapper" to the jspm_packages directory and updates the jspm.config.js file accordingly.
+jspm install aurelia-bootstrapper
+
+:: install bootstrap for styling
+jspm install bootstrap
+
+:: install express
+npm install express
+
+:: to run the node server to serve the static files, so that it servers the index.html
+node server.js
