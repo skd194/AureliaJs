@@ -66,7 +66,7 @@ System.config({
       "aurelia-loader-default": "npm:aurelia-loader-default@1.2.1",
       "aurelia-logging-console": "npm:aurelia-logging-console@1.1.1",
       "aurelia-pal": "npm:aurelia-pal@1.8.2",
-      "aurelia-pal-browser": "npm:aurelia-pal-browser@1.8.1",
+      "aurelia-pal-browser": "npm:aurelia-pal-browser@1.2.0",
       "aurelia-polyfills": "npm:aurelia-polyfills@1.3.4",
       "aurelia-router": "npm:aurelia-router@1.7.1",
       "aurelia-templating": "npm:aurelia-templating@1.11.1",
@@ -112,7 +112,7 @@ System.config({
     "npm:aurelia-metadata@1.0.8": {
       "aurelia-pal": "npm:aurelia-pal@1.8.2"
     },
-    "npm:aurelia-pal-browser@1.8.1": {
+    "npm:aurelia-pal-browser@1.2.0": {
       "aurelia-pal": "npm:aurelia-pal@1.8.2"
     },
     "npm:aurelia-polyfills@1.3.4": {

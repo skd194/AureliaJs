@@ -18,6 +18,7 @@
     "dependencies": {
       "aurelia-bootstrapper": "npm:aurelia-bootstrapper@^2.4.1",
       "aurelia-framework": "npm:aurelia-framework@^1.4.1",
+      "aurelia-pal-browser": "npm:aurelia-pal-browser@1.2.0",
       "bootstrap": "github:twbs/bootstrap@^5.3.3"
     },
     "devDependencies": {
