@@ -12,10 +12,11 @@
     "aurelia-bootstrapper": "^2.4.1",
     "express": "^4.19.2",
     "install": "^0.13.0",
-    "jspm": "^0.16.55"
+    "jspm": "^0.16.45"
   },
   "jspm": {
     "dependencies": {
+      "aurelia-bootstrapper": "npm:aurelia-bootstrapper@^2.4.1",
       "aurelia-framework": "npm:aurelia-framework@^1.4.1",
       "bootstrap": "github:twbs/bootstrap@^5.3.3"
     },
