@@ -1,3 +1,3 @@
 export class App {
-  public message = 'Hello World!';
+  public message = '> message from App - [Root]';
 }
