@@ -21,6 +21,7 @@ export function configure(aurelia: Aurelia): void {
 
   aurelia.use
     .standardConfiguration()
+    // Globally registering dependencies
     .feature(PLATFORM.moduleName('resources/index'));
 
   aurelia.use.developmentLogging(environment.debug ? 'debug' : 'warn');
