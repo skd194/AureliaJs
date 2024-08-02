@@ -10,7 +10,6 @@ export class Event {
   constructor(readonly _dataCache: DataCache) {
     _dataCache.data.push('b');
     _dataCache.data.push('c');
-    debugger;
   }
 
   item: IEvent[]
