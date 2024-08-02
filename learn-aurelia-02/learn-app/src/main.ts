@@ -2,7 +2,7 @@ import { Aurelia } from 'aurelia-framework';
 import environment from '../config/environment.json';
 import { PLATFORM } from 'aurelia-pal';
 import 'bootstrap';
-import { DataCache } from './services/dataCache';
+import { DataCache } from './services/data-cache';
 
 export function configure(aurelia: Aurelia): void {
 

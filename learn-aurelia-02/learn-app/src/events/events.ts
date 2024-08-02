@@ -1,5 +1,5 @@
 import { inject } from 'aurelia-framework';
-import { DataCache } from '../services/dataCache';
+import { DataCache } from '../services/data-cache';
 
 @inject('Cache')
 export class Events {
