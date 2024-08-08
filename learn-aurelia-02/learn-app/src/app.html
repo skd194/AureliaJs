@@ -4,14 +4,11 @@
     <a class="navbar-brand" href="#">Navbar</a>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Events </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#discussion">Discussion</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#jobs">Job board</a>
+        <li
+          repeat.for="route of router.navigation"
+          class="nav-item ${route.isActive ? 'active': ''}"
+        >
+          <a class="nav-link" href.bind="route.href">${route.title}</a>
         </li>
       </ul>
     </div>

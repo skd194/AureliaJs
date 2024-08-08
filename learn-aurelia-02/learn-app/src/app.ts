@@ -15,9 +15,9 @@ export class App {
     this.router = router;
     config.title = 'Events';
     config.map([
-      { route: ['', 'home', 'events'], name: 'Home', moduleId: PLATFORM.moduleName('./events/events'), nav: true, title: 'This is the title' },
-      { route: ['discussion'], name: 'Discussion', moduleId: PLATFORM.moduleName('./discussion/discussion'), nav: true, title: 'This is the title' },
-      { route: ['jobs'], name: 'JobBoard', moduleId: PLATFORM.moduleName('./jobs/jobs'), nav: true, title: 'This is the title' }
+      { route: ['', 'home', 'events'], name: 'Home', moduleId: PLATFORM.moduleName('./events/events'), nav: true, title: 'Events' },
+      { route: ['discussion'], name: 'Discussion', moduleId: PLATFORM.moduleName('./discussion/discussion'), nav: true, title: 'Discussion' },
+      { route: ['jobs'], name: 'JobBoard', moduleId: PLATFORM.moduleName('./jobs/jobs'), nav: true, title: 'Jobs' }
     ]);
   }
 
