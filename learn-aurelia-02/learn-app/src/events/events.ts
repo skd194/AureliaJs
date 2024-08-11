@@ -7,16 +7,14 @@ import { DataRepository } from '../services/data-repository';
 
 type SuperPlugin = (Plugin1 | Plugin2);
 
-@inject('Cache', Lazy.of(LazyInject), All.of('SuperPlugin'))
-@inject(DataRepository)
+@inject('Cache', Lazy.of(LazyInject), All.of('SuperPlugin'), DataRepository)
 export class Events {
   private events: IEvent[];
   constructor(
-    private readonly _lazyOfLazyInject: () => LazyInject,
-    public readonly _dataRepository: DataRepository,
     readonly _dataCache: DataCache,
+    private readonly _lazyOfLazyInject: () => LazyInject,
     readonly plugins: SuperPlugin[],
-
+    public readonly _dataRepository: DataRepository,
   ) {
     _dataCache.data.push('a');
     plugins.forEach((plugin: SuperPlugin) => {
@@ -28,7 +26,10 @@ export class Events {
         this.events = events.map(e => {
           const event: IEvent = {
             id: e.id,
-            title: e.title
+            title: e.title,
+            dateTime: e.dateTime,
+            description: e.description,
+            image: e.image,
           }
           return event;
         });
@@ -44,5 +45,8 @@ export class Events {
 
 export interface IEvent {
   id: number;
-  title: string
+  title: string;
+  dateTime: string,
+  description: string,
+  image: string,
 }
