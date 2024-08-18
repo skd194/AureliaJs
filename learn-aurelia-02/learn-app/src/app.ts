@@ -15,10 +15,32 @@ export class App {
     this.router = router;
     config.title = 'Events';
     config.map([
-      { route: ['', 'home', 'events'], name: 'Home', moduleId: PLATFORM.moduleName('./events/events'), nav: true, title: 'Events' },
-      { route: ['discussion'], name: 'Discussion', moduleId: PLATFORM.moduleName('./discussion/discussion'), nav: true, title: 'Discussion' },
-      { route: ['jobs'], name: 'JobBoard', moduleId: PLATFORM.moduleName('./jobs/jobs'), nav: true, title: 'Jobs' },
-      { route: 'event-detail/:eventId', name: 'JobBoard', moduleId: PLATFORM.moduleName('./events/event-detail/event-detail'), },
+      {
+        name: 'Home',
+        route: ['', 'home', 'events'],
+        moduleId: PLATFORM.moduleName('./events/events'),
+        nav: true,
+        title: 'Events'
+      },
+      {
+        name: 'Discussion',
+        route: ['discussion'],
+        moduleId: PLATFORM.moduleName('./discussion/discussion'),
+        nav: true,
+        title: 'Discussion'
+      },
+      {
+        name: 'JobBoard',
+        route: ['jobs'],
+        moduleId: PLATFORM.moduleName('./jobs/jobs'),
+        nav: true,
+        title: 'Jobs'
+      },
+      {
+        name: "event-detail",
+        route: 'event-detail/:eventId',
+        moduleId: PLATFORM.moduleName('./events/event-detail/event-detail'),
+      },
     ]);
   }
 

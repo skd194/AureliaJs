@@ -1,3 +1,4 @@
+import { Router } from 'aurelia-router';
 import { inject } from 'aurelia-framework';
 import { PLATFORM } from 'aurelia-pal';
 import { useView } from 'aurelia-templating';
