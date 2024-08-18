@@ -1,24 +1,22 @@
 <template>
   <h1>Events</h1>
-  <div repeat.for="event of events">
-    <compose model.bind="event" view-model="./event/event"></compose>
-  </div>
   <div>
     <button
       type="button"
-      class="btn btn-dark"
+      class="btn btn-secondary"
+      click.trigger="goToDiscussion()"
+    >
+      <i class="bi bi-arrow-left me-2"></i>Back
+    </button>
+    <button
+      type="button"
+      class="btn btn-warning"
       click.trigger="createAndUseLazy()"
     >
       Use Lazy
     </button>
   </div>
-  <div class="mt-2">
-    <button
-      type="button"
-      class="btn btn-success"
-      click.trigger="goToDiscussion()"
-    >
-      Back
-    </button>
+  <div repeat.for="event of events">
+    <compose model.bind="event" view-model="./event/event"></compose>
   </div>
 </template>

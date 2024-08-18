@@ -1,14 +1,23 @@
 <template>
   <style>
     .rbox {
-      background-color: #aff0be; /* Light green background */
-      border: 2px solid #449758; /* Dark green border */
+      background-color: #eeebff; /* Light green background */
+      border: 2px solid #e5e2fa; /* Dark green border */
       padding: 20px;
       border-radius: 5px;
       margin: 5px;
     }
   </style>
   <div class="rbox">
-    <a href.bind="event.detailUrl"> ${item.id} : ${item.title} </a>
+    <a
+      href.bind="event.detailUrl"
+      style="
+        color: rgb(45, 28, 119);
+        font-style: italic;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      "
+    >
+      ${item.id} : ${item.title}
+    </a>
   </div>
 </template>
