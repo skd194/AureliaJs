@@ -31,10 +31,10 @@ export class Events {
         let filterAppliedEvents = events
         if (params.speaker || params.topic) {
           filterAppliedEvents = events
-            .filter(e =>
-              e.speaker.toLowerCase().indexOf(params.speaker.toLowerCase()) > -1 ||
-              e.title.toLowerCase().indexOf(params.topic.toLowerCase()) > -1
-            );
+            .filter(e => {
+              return e.speaker.toLowerCase().indexOf(params.speaker?.toLowerCase()) > -1 ||
+                e.title.toLowerCase().indexOf(params.topic?.toLowerCase()) > -1
+            });
         }
         this.events = filterAppliedEvents.map(e => {
           const event: IEvent = {

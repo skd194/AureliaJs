@@ -16,21 +16,22 @@ export class App {
     config.title = 'Events';
     config.map([
       {
-        name: 'Home',
-        route: ['', 'home', 'events'],
+        name: 'events',
+        // route: ['', 'home', 'events'],
+        route: ['', 'events'],
         moduleId: PLATFORM.moduleName('./events/events'),
         nav: true,
         title: 'Events'
       },
       {
-        name: 'Discussion',
+        name: 'discussion',
         route: ['discussion'],
         moduleId: PLATFORM.moduleName('./discussion/discussion'),
         nav: true,
         title: 'Discussion'
       },
       {
-        name: 'JobBoard',
+        name: 'job-board',
         route: ['jobs'],
         moduleId: PLATFORM.moduleName('./jobs/jobs'),
         nav: true,
