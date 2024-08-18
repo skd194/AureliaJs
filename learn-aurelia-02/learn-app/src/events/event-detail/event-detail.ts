@@ -1,13 +1,14 @@
+import { Router } from 'aurelia-router';
 import { RouteConfig, NavigationInstruction } from 'aurelia-router';
 import { inject } from 'aurelia-framework';
 import { DataRepository } from '../../services/data-repository';
 import { IEvent } from '../events';
 
-@inject(DataRepository)
+@inject(DataRepository, Router)
 export class EventDetail {
   event: IEvent;
 
-  constructor(readonly dataRepository: DataRepository) {
+  constructor(readonly dataRepository: DataRepository, private readonly _router: Router) {
     this.dataRepository = dataRepository;
   }
 
@@ -17,5 +18,9 @@ export class EventDetail {
       .then(ed => {
         this.event = ed
       });
+  }
+
+  goToEvents() {
+    this._router.navigateToRoute('events');
   }
 }

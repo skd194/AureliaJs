@@ -54,6 +54,10 @@ export class Events {
     console.log('about to use lazy');
     this._lazyOfLazyInject().doStuff();
   }
+
+  goToDiscussion() {
+    this._router.navigate(this._router.generate('discussion'))
+  }
 }
 
 export interface IEvent {

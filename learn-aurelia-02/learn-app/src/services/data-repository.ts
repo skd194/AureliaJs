@@ -13,7 +13,7 @@ export class DataRepository {
           e.dateTime = moment(e.dateTime).format('MM/DD/YYYY HH:mm')
         })
         resolve(events);
-      }, 2000);
+      }, 200);
     });
   }
 
